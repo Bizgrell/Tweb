@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -10,19 +11,21 @@ import ContentComponent from './content';
 import MyForm from './forma';
 
 
+
 function App() {
 
   const [count, setCount] = useState(0)
 
+
   return (
 
     <div>
-        <MyForm/>
+
       <p> Malanciuc Dmitri Cr-203
       </p>
       <h1>Выбор страницы</h1>
          <MenuComponent />
-       <h1><DataTable/></h1>
+       <DataTable/>
        <ContentComponent/>
     </div>
   )
